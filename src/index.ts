@@ -13,7 +13,7 @@ const { MONGO_URI, PORT } = config;
 const app = express();
 
 app.use(express.json());
-app.use(compression());
+// app.use(compression());
 app.use(express.static(`${config.DIR}/public`));
 
 app.use(
